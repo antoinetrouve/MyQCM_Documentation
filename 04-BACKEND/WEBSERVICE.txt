@@ -1,0 +1,7 @@
+WEBSERVICE (6 jours)
+	Moteur = comment imaginer le service (xml, json...) BackOffice = 4 jours
+	Fonctionnalité identification -> Front-office
+		* requêt (BO) = 0.5 jrs
+		* Android (IHM) = 0.5 jrs
+		* IOS (IHM) = 0.5 jrs
+		* Windows Phone (IHM) = 0.5 jrs

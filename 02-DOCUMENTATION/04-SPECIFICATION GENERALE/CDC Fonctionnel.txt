@@ -1,0 +1,40 @@
+CDC Fonctionnel
+
+Fonction d'autehntification
+	- uthentification Sécurisée HTTPS + chiffrement mot de passe
+	- Accès par authentification (web service en https, certificat, mdp chiffrée complexe maj / min / 8 caractère / caractères spéciaux / chiffres)
+	- adresse mail relié au compte donc login c'est l'adresse mail
+	- Génération automatique du mot de passe ? (backend = ajouter un bouton création comte utilisateur -> fournir le login puis génération du mdp avec posibilité d'envoyer un email ? )
+	- Mise en place d'un LDAP - Active Directory = option
+	- Etudiants (compte user doit être lié à un groupe / accès à un groupe ou à un étudiant au QCM)
+	-Faire schéma fenêtre d'authentification sur application
+Gestion des utilisateurs
+	- connexion avec un LDAP - Active Directory = option
+	- Etudiants (compte user doit être lié à un groupe / accès à un groupe ou à un étudiant au QCM)
+	- groupe = classe de l'IIA
+	- Etudiant n'a que le droit de lecture = gestion des droits.
+Gestion des questionnaires
+
+Fonction correction
+	- web services calcul les résultats
+	- Analyse nbr de point par réponse QCM avec perte de points (bonne rep +1 / mauvaise rep -1) -> voir régle officielle
+	- QCM passé n'est pas supprimé en bdd
+	- Questions aléatoires (random) nbr de question pas limité
+	- validation d'un QCM (règle officielle)
+	- QCM de type TOEIC
+
+Interface de gestion du contenu des applications
+	- Prévoir le web service pour un développement web
+	- Backend = web service (doctrine / symphonie 2)
+	- Backend sur le navigateur gestion des droits
+
+
+
+Couleur:
+Color vert : 
+R 170 G 230 B 72
+#aae648
+
+Color noir :
+R 44 G 44 B 44
+#2c2c2c
