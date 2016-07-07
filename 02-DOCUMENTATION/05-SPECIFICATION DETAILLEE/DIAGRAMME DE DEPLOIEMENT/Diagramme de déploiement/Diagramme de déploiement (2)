@@ -1,0 +1,44 @@
+Node Client_User 
+
+Le node client_user représente la partie applicative de la solution et regroupe plusieurs composants : 
+	- Une interface utilisateur représentant l'apk de l'application, le programme exécuter sur le téléphone
+		Cet Apk est dispose de deux librairies :
+			-	HttpClient qui est la librairie qui permet d'exécuter les requêtes de communication avec le WebService, elle hérite de HTTPCore.
+			-	SQLiteAdapter qui elle est une libraire créer qui permet la communication avec la base de données en SQLite.Elle contient toute 
+				les requête de gestion de la base(Ajout, list, suppression...). 
+
+Node Application DB 
+
+Ce node représente la partie base de donnée de l'application qui est composé de :
+	- Un système de gestion de base de donnée SQLite
+	- Ainsi que de la base de donnée 
+
+Node Client_Administrator  
+
+Le node Client_Administrator illustre la partie d'administration de la solution côté client, ses l'interface par naviguateur donnant accès
+au front-end.
+
+Node Server Web
+
+Ce node exprime toute la partie serveur web et est divisé en 3 partie :
+	- Le node WebService 
+	- Le node Front-end
+	- Le Bundle Doctrine qui permet à symfony de communiquer avec le système gestion de base de donnée contenu dans le Node Server Web
+
+Node Webservice
+
+	Node permettant la réception et l'envoi de donnée entre l'application et le serveur Web.
+	Il est composé de deux Bundles :
+		- FOSRest  qui permet de générer des urls renvoyant des flux json pour permettre la circulation des infos entre l'applicatif et le serveur
+		- JMSerializer permet de sérializer donc de mettre en forme les données envoyées via doctrine qui seront par la suite renvoyer par FOSREST Bundle
+
+Node Front-end
+
+	Node qui permet d'administrer la solution au travers d'un portail web via plusieurs Bundle Symfony :
+		- Bundle Sonata permettant de mettre en place une interface d'administration facilement et rapidement. Qui est en faite un bundle regroupant d'autre bundle :
+			- Bundle Admin Fournissant à partir des informations reçu par le Bundle Doctrine-Admin une interface visuel auto-généré.
+
+Node Server DB
+
+A l'image du Node Application DB représente la partie base de donnée de notre serveur web.
+En effet nous disposons également d'un système de gestion de base de donnée ainsi que de la base de données de l'application 
