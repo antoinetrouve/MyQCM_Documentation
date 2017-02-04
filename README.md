@@ -1,2 +1,2 @@
 # MyQCM_Documentation
-All documentation, scheme and management of project about MyQCM project
+All documentation, scheme and project management about MyQCM project
